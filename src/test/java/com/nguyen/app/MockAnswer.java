@@ -43,14 +43,20 @@ class MyClass {
 public class MockAnswer {
     @Test
     public void test() {
+        // Given
         List list = mock(List.class, new MockitoAnswer());
+
+        // When
         int actual = list.size();
+
+        // Then
         verify(list).size();
         assertThat(actual).isEqualTo(1);
     }
 
     @Test
     public void test2() {
+        // Given
         List list = mock(List.class);
         when(list.get(anyInt())).thenAnswer(
                 new Answer<Object>() {
@@ -60,25 +66,33 @@ public class MockAnswer {
                     }
                 }
         );
+
+        // Then
         assertThat(list.get(anyInt())).isEqualTo("abc");
     }
 
     @Test
     public void test3() {
+        // Given
         MockSettings mockSettings = withSettings().defaultAnswer(new Answer() {
             @Override
             public Object answer(InvocationOnMock invocationOnMock) throws Throwable {
                 return false;
             }
         });
+
+        // When
         List list = mock(List.class, mockSettings);
         boolean actual = list.add(RandomStringUtils.randomAlphabetic(6));
+
+        // Then
         verify(list).add(anyString());
         assertThat(actual).isFalse();
     }
 
     @Test
     public void test4() {
+        // Given
         MyClass myClass = mock(MyClass.class);
         when(myClass.getList()).thenAnswer(new Answer<Object>() {
             @Override
@@ -86,21 +100,30 @@ public class MockAnswer {
                 return new ArrayList<>(Arrays.asList("a", "b", "c"));
             }
         });
-        List<String> actual = myClass.getList();
-        verify(myClass).getList();
         List<String> expected = new ArrayList<>(Arrays.asList("a", "b", "c"));
+
+        // When
+        List<String> actual = myClass.getList();
+
+        // Then
+        verify(myClass).getList();
         assertThat(actual).isEqualTo(expected);
     }
 
     @Test
     public void test5() {
+        // Given
         List list = mock(List.class, new Answer() {
             @Override
             public Object answer(InvocationOnMock invocationOnMock) throws Throwable {
                 return new ArrayList<>(Arrays.asList("a", "b", "c"));
             }
         });
+
+        // When
         Object actual = list.get(anyInt());
+
+        // Then
         verify(list).get(anyInt());
         assertThat(actual).isEqualTo(Arrays.asList("a", "b", "c"));
     }
