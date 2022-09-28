@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.nguyen.app.CalculatorTest" time="0.003" tests="7" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.nguyen.app.MockTest" time="0.091" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -7,7 +7,7 @@
     <property name="java.specification.version" value="1.8"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="D:\java\Java_JUnit\target\test-classes;D:\java\Java_JUnit\target\classes;C:\Users\kvnguyen\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\kvnguyen\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\kvnguyen\.m2\repository\org\mockito\mockito-all\1.10.19\mockito-all-1.10.19.jar;C:\Users\kvnguyen\.m2\repository\org\assertj\assertj-core\3.22.0\assertj-core-3.22.0.jar;"/>
+    <property name="java.class.path" value="D:\java\Java_JUnit\target\test-classes;D:\java\Java_JUnit\target\classes;C:\Users\kvnguyen\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\kvnguyen\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\kvnguyen\.m2\repository\org\mockito\mockito-all\1.10.19\mockito-all-1.10.19.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -18,8 +18,8 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_121\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\kvnguyen\AppData\Local\Temp\surefire5765750500302091567\surefirebooter6989953865510743344.jar C:\Users\kvnguyen\AppData\Local\Temp\surefire5765750500302091567 2022-09-27T13-46-14_633-jvmRun1 surefire16054871257357747tmp surefire_08601455776565784733tmp"/>
-    <property name="surefire.test.class.path" value="D:\java\Java_JUnit\target\test-classes;D:\java\Java_JUnit\target\classes;C:\Users\kvnguyen\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\kvnguyen\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\kvnguyen\.m2\repository\org\mockito\mockito-all\1.10.19\mockito-all-1.10.19.jar;C:\Users\kvnguyen\.m2\repository\org\assertj\assertj-core\3.22.0\assertj-core-3.22.0.jar;"/>
+    <property name="sun.java.command" value="C:\Users\kvnguyen\AppData\Local\Temp\surefire773550343299577172\surefirebooter369773213744110258.jar C:\Users\kvnguyen\AppData\Local\Temp\surefire773550343299577172 2022-09-27T10-15-45_089-jvmRun1 surefire5322378613154524990tmp surefire_02685684048831887354tmp"/>
+    <property name="surefire.test.class.path" value="D:\java\Java_JUnit\target\test-classes;D:\java\Java_JUnit\target\classes;C:\Users\kvnguyen\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\kvnguyen\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\kvnguyen\.m2\repository\org\mockito\mockito-all\1.10.19\mockito-all-1.10.19.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\kvnguyen"/>
     <property name="user.language" value="en"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\kvnguyen\AppData\Local\Temp\surefire5765750500302091567\surefirebooter6989953865510743344.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\kvnguyen\AppData\Local\Temp\surefire773550343299577172\surefirebooter369773213744110258.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_121\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -46,6 +46,7 @@
     <property name="localRepository" value="C:\Users\kvnguyen\.m2\repository"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\kvnguyen\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2022.2"/>
     <property name="java.version" value="1.8.0_121"/>
     <property name="user.dir" value="D:\java\Java_JUnit"/>
     <property name="os.arch" value="amd64"/>
@@ -60,11 +61,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="testMod_Success" classname="com.nguyen.app.CalculatorTest" time="0"/>
-  <testcase name="testMul" classname="com.nguyen.app.CalculatorTest" time="0.001"/>
-  <testcase name="testSub" classname="com.nguyen.app.CalculatorTest" time="0"/>
-  <testcase name="testSum" classname="com.nguyen.app.CalculatorTest" time="0"/>
-  <testcase name="testMod_Fail" classname="com.nguyen.app.CalculatorTest" time="0.001"/>
-  <testcase name="testDiv_Success" classname="com.nguyen.app.CalculatorTest" time="0"/>
-  <testcase name="testDiv_Fail" classname="com.nguyen.app.CalculatorTest" time="0.001"/>
+  <testcase name="test" classname="com.nguyen.app.MockTest" time="0.091"/>
 </testsuite>
