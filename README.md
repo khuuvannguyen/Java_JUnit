@@ -15,3 +15,5 @@ Hibernate: https://github.com/khuuvannguyen/Java_Hibernate
 Spring boot: https://github.com/khuuvannguyen/Spring_Boot
 
 Spring boot data JPA: https://github.com/khuuvannguyen/Spring_Boot_Data_JPA
+
+Spring boot FlyWay: https://github.com/khuuvannguyen/Spring_Boot_FlyWay
