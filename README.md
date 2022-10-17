@@ -19,3 +19,5 @@ Spring boot data JPA: https://github.com/khuuvannguyen/Spring_Boot_Data_JPA
 Spring boot FlyWay: https://github.com/khuuvannguyen/Spring_Boot_FlyWay
 
 Spring boot Security: https://github.com/khuuvannguyen/Spring_Boot_Secure
+
+Spring boot project: https://github.com/khuuvannguyen/Spring_Boot_Project
